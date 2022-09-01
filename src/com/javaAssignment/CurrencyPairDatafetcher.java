@@ -12,7 +12,7 @@ public class CurrencyPairDatafetcher {
 	
 	public static  ArrayList<CurrencyPair> list=new ArrayList<>();
 	
-	public CurrencyPairDatafetcher(){
+	public void datafetcher(){
 	try {
 		
         FileReader filereader = new FileReader("src\\CurrencyPairs.csv");

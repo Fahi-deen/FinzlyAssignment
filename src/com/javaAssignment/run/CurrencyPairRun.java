@@ -10,6 +10,7 @@ import com.javaAssignment.sort_currency_pairs.SortCurrencyPairs;
 public class CurrencyPairRun {
     public static void main(String[] args) {
     	 CurrencyPairDatafetcher currencyPairDatafetcher=new CurrencyPairDatafetcher();
+    	 currencyPairDatafetcher.datafetcher();
     	 Scanner scanner=new Scanner(System.in);
     	 System.out.println("Choose Your Option.\n" + "1.To search the pairs\n" + "2.To sort the Currency Pairs"
  				+ "\n3.To know last UpdatedTime\n" + "4.Exit");
@@ -23,7 +24,7 @@ public class CurrencyPairRun {
     			 String currency1=scanner.next().toUpperCase();
     			 System.out.println("Enter Currency 2:");
     			 String currency2=scanner.next().toUpperCase();
-    			 SearchCurrencyPairs.searchPairs(currency1,currency2,currencyPairDatafetcher.list);
+    			 SearchCurrencyPairs.searchPairs(currency1,currency2,CurrencyPairDatafetcher.list);
     			 break;
     		 case 2:
     			 System.out.println("Results of Sorted order by currency1+currency2:");
